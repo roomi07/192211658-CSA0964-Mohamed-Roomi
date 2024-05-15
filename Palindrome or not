@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Sample {
+    public static void main(String[] args) {
+        System.out.println("Enter a string: ");
+        Scanner s = new Scanner(System.in);
+        String input = s.nextLine();
+        StringBuffer word = new StringBuffer(input);
+        StringBuffer reversed_word = new StringBuffer(word).reverse();
+        if (input.equals(reversed_word.toString())) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+    }
+}
